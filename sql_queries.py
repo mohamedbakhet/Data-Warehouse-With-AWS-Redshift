@@ -143,7 +143,7 @@ staging_songs_copy = ("""
     TRUNCATECOLUMNS BLANKSASNULL EMPTYASNULL;
 """).format(song,IAM_ROLE)
 
-# FINAL TABLES
+# inert Queries into TABLES
 
 songplay_table_insert = ("""
 INSERT INTO songplays(start_time, user_id, level, song_id, artist_id, session_id, location, user_agent)
